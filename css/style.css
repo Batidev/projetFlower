@@ -1,0 +1,257 @@
+/* font-family: 'Montserrat',sans-serif; */
+
+
+/* Global Page */
+
+@font-face {
+    font-family: 'courgette';
+    src: url(../font/Courgette/Courgette-Regular.ttf)
+}
+
+h2 {
+    font-family: 'courgette';
+    font-size: 50px;
+    color: #517f41;
+    padding-bottom: 30px;
+}
+
+section {
+    text-align: center;
+}
+
+.row {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+/* HOME */
+
+header {
+    background-image: url(../img/fdb.jpg);
+    height: 100vh;
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    color: #517f41;
+}
+
+@font-face {
+    font-family: "wildFlower";
+    src: url(../font/wildFlowerBold/WildFlowerBold.ttf);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100vw;
+    height: 40px;
+    font-size: 25px;
+    background-color: transparent;
+    z-index: 9;
+}
+
+#logo {
+    font-family: "wildFlower";
+    padding-left: 20px;
+}
+
+#barNav {
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 20px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:active {
+    color: #4cd81d;
+}
+
+a:visited {
+    color: #517f41;
+}
+
+#tittle {
+    width: 700px;
+    height: 200px;
+    background: linear-gradient(rgba(192, 214, 178, 0.498), rgba(192, 214, 178, 0.498));
+    border: dotted white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 40%;
+}
+
+@font-face {
+    font-family: 'DancingScript';
+    src: url(../font/DancingScript/DancingScript-VariableFont_wght.ttf);
+}
+
+h1 {
+    font-family: 'DancingScript', cursive;
+    font-size: 100px;
+    color: white;
+}
+
+
+/* ABOUT Us */
+
+#section1 {
+    width: 100vw;
+    padding: 30px;
+}
+
+i {
+    font-size: 36px;
+    color: #aac0a2;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.textAbout {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* IMAGE FIXE */
+
+#section2 {
+    background-image: url(../img/bg3.jpg);
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
+}
+
+#slogan {
+    width: 900px;
+    height: 100px;
+    background: linear-gradient(rgba(192, 214, 178, 0.498), rgba(192, 214, 178, 0.498));
+    border: dotted white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: 'DancingScript', cursive;
+    font-size: 30px;
+}
+
+
+/* TEAM */
+
+#section3 {
+    width: 100vw;
+    padding: 30px;
+}
+
+.imgteam2 {
+    border-radius: 50%;
+    border: 16px solid #517f41;
+    width: 100%;
+}
+
+.imgTeam {
+    position: relative;
+}
+
+.imgTeam:hover .rondgreen {
+    visibility: inherit;
+}
+
+.rondgreen {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    visibility: hidden;
+    background-color: #517f418d;
+    border-radius: 50%;
+    transform: scale(0.8);
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.rondgreen i {
+    color: white;
+}
+
+.nameTeam {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-family: 'courgette';
+    font-size: 30px;
+}
+
+.ambiotion {
+    font-style: italic;
+    font-size: 20px;
+}
+
+p {
+    padding-top: 10px;
+    font-size: 18px;
+    text-justify: auto;
+}
+
+
+/* SLIDER */
+
+#section4 {
+    background-image: url(../img/bg2.jpg);
+    background-attachment: fixed;
+    width: 100vw;
+    padding: 30px;
+}
+
+.glide__slide {
+    width: 300px;
+    border-radius: 50px;
+}
+
+
+/* QUAMS */
+
+#section5 {
+    padding: 30px;
+}
+
+.imgQuams {
+    padding-bottom: 20px;
+}
+
+
+/* CONTACT */
+
+#section6 {
+    background-color: #a9c0a1;
+    padding: 50px 30px 100px 30px;
+    display: flex;
+    justify-content: center;
+}
+
+#titleContact {
+    width: 250px;
+    height: 100px;
+    /* background: linear-gradient(rgba(192, 214, 178, 0.498), rgba(192, 214, 178, 0.498)); */
+    border: dotted white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 50px;
+}
