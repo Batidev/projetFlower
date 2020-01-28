@@ -27,6 +27,10 @@ section {
 
 /* HOME */
 
+#burger {
+    visibility: hidden;
+}
+
 header {
     background-image: url(../img/fdb.jpg);
     height: 100vh;
@@ -232,6 +236,7 @@ p {
 
 .imgQuams {
     padding-bottom: 20px;
+    width: 100%;
 }
 
 
@@ -254,4 +259,74 @@ p {
     align-items: center;
     color: white;
     font-size: 50px;
+}
+
+@media screen and (max-width: 450px) {
+    /* header */
+    header {
+        display: flex;
+        justify-content: start;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        color: #517f41;
+    }
+    #barNav {
+        width: auto;
+    }
+    menu {
+        padding-left: 15px;
+        position: absolute;
+        left: -500px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 150px;
+        height: 225px;
+        text-decoration: none;
+        z-index: 9;
+        top: 30px;
+    }
+    .menuVisi {
+        left: 0;
+    }
+    a {
+        text-decoration: none;
+        padding-top: 15px;
+    }
+    #burger {
+        visibility: inherit;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: fixed;
+        top: 25px;
+        right: 25px;
+        font-size: 30px;
+        background: linear-gradient(rgba(192, 214, 178, 0.498), rgba(192, 214, 178, 0.498));
+        z-index: 9;
+        width: 50px;
+        height: 50px;
+        border-radius: 50px;
+        color: white;
+    }
+    #logo {
+        font-family: "wildFlower";
+        padding-left: 20px;
+    }
+    h1 {
+        font-size: 40px;
+    }
+    #tittle {
+        width: 300px;
+        height: 100px;
+        background: linear-gradient(rgba(192, 214, 178, 0.498), rgba(192, 214, 178, 0.498));
+        border: dotted white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 40%;
+    }
 }

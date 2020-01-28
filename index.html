@@ -8,7 +8,11 @@
     <script src="https://kit.fontawesome.com/3c7f5856f6.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./css/bootstrap.css">
     <link rel="stylesheet" href="./css/glide.core.css">
+    <link rel="stylesheet" href="./css/glide.theme.css">
     <link rel="stylesheet" href="./css/aos.css">
+    <link rel="stylesheet" href="./css/jquery.fancybox.css">
+    <link rel="stylesheet" href="./css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="./css/animate.css">
     <link rel="stylesheet" href="./css/style.css">
     <title>Flower</title>
 </head>
@@ -18,13 +22,14 @@
     <header id="home">
         <nav>
             <div id="logo">Flower</div>
-            <div id="barNav">
+            <menu id="barNav">
                 <a href="#home">Home</a>
                 <a href="#section1">About Us</a>
                 <a href="#section3">Team</a>
                 <a href="#section5">Quams</a>
                 <a href="#section6">Contact</a>
-            </div>
+            </menu>
+            <div><i id="burger" class="fas fa-bars"></i></div>
         </nav>
         <div id="tittle" class="rellax">
             <H1>Praeterea</H1>
@@ -33,7 +38,7 @@
 
     <!-- ABOUT Us -->
     <section id="section1" class="contenair">
-        <h2>About Us</h2>
+        <h2 data-aos="flip-up">About Us</h2>
         <div class="row align-middle">
             <div class="col-sm-3 textAbout">
                 <i class="fas fa-air-freshener"></i>
@@ -61,7 +66,7 @@
     </section>
     <!-- TEAM -->
     <section id="section3" class="contenair">
-        <h2>Team</h2>
+        <h2 data-aos="flip-down">Team</h2>
         <div class="row">
             <div class="col-lg-2 contendTeam">
                 <div class="imgTeam">
@@ -137,25 +142,61 @@
         <h2>Quams</h2>
         <div class="contenair">
             <div class="row">
-                <img src="./img/fleur/f1.png" class="col-lg-4 imgQuams">
-                <img src="./img/fleur/f2.jpg" class="col-lg-4 imgQuams">
-                <img src="./img/fleur/f3.jpg" class="col-lg-4 imgQuams">
+                <div class="col-lg-4">
+                    <a href="./img/fleur/f1.png" data-fancybox="images" data-caption="Caption #1">
+                        <img src="./img/fleur/f1.png" class="imgQuams">
+                    </a>
+                </div>
+                <div class="col-lg-4">
+                    <a href="./img/fleur/f2.jpg" data-fancybox="images" data-caption="Caption #2">
+                        <img src="./img/fleur/f2.jpg" class="imgQuams">
+                    </a>
+                </div>
+                <div class="col-lg-4">
+                    <a href="./img/fleur/f3.jpg" data-fancybox="images" data-caption="Caption #3">
+                        <img src="./img/fleur/f3.jpg" class="imgQuams">
+                    </a>
+                </div>
             </div>
             <div class="row">
-                <img src="./img/fleur/f4.jpg" class="col-lg-4 imgQuams">
-                <img src="./img/fleur/f5.jpg" class="col-lg-4 imgQuams">
-                <img src="./img/fleur/f6.jpg" class="col-lg-4 imgQuams">
+                <div class="col-lg-4">
+                    <a href="./img/fleur/f4.jpg" data-fancybox="images" data-caption="Caption #4">
+                        <img src="./img/fleur/f4.jpg" class="imgQuams">
+                    </a>
+                </div>
+                <div class="col-lg-4">
+                    <a href="./img/fleur/f5.jpg" data-fancybox="images" data-caption="Caption #5">
+                        <img src="./img/fleur/f5.jpg" class="imgQuams">
+                    </a>
+                </div>
+                <div class="col-lg-4">
+                    <a href="./img/fleur/f6.jpg" data-fancybox="images" data-caption="Caption #6">
+                        <img src="./img/fleur/f6.jpg" class="imgQuams">
+                    </a>
+                </div>
             </div>
             <div class="row">
-                <img src="./img/fleur/f7.jpg" class="col-lg-4 imgQuams">
-                <img src="./img/fleur/f8.jpg" class="col-lg-4 imgQuams">
-                <img src="./img/fleur/f9.jpg" class="col-lg-4 imgQuams">
+                <div class="col-lg-4">
+                    <a href="./img/fleur/f7.jpg" data-fancybox="images" data-caption="Caption #7">
+                        <img src="./img/fleur/f7.jpg" class="imgQuams">
+                    </a>
+                </div>
+                <div class="col-lg-4">
+                    <a href="./img/fleur/f7.jpg" data-fancybox="images" data-caption="Caption #8">
+                        <img src="./img/fleur/f7.jpg" class="imgQuams">
+                    </a>
+                </div>
+                <div class="col-lg-4">
+                    <a href="./img/fleur/f9.jpg" data-fancybox="images" data-caption="Caption #9">
+                        <img src="./img/fleur/f9.jpg" class="imgQuams">
+                    </a>
+                </div>
             </div>
         </div>
     </section>
     <!-- Contact -->
     <section id="section6">
-        <div id="titleContact">Contact</div>
+        <div id="titleContact" class="animated infinite jello">Contact</div>
     </section>
 
     <!-- script -->
@@ -165,6 +206,8 @@
     <script src="./js/glide.theme.css"></script>
     <script src="./js/rellax.js"></script>
     <script src="./js/aos.js"></script>
+    <script src="./js/jquery.fancybox.js"></script>
+    <script src="./js/jquery.fancybox.min.js"></script>
     <script src="./js/script.js"></script>
 </body>
 
