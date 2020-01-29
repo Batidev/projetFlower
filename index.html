@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
     <meta charset="UTF-8">
@@ -17,17 +17,17 @@
     <title>Flower</title>
 </head>
 
-<body>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
     <!-- HOME -->
     <header id="home">
-        <nav>
+        <nav data-spy="scroll" data-target=".navbar" data-offset="50">
             <div id="logo">Flower</div>
             <menu id="barNav">
-                <a href="#home">Home</a>
-                <a href="#section1">About Us</a>
-                <a href="#section3">Team</a>
-                <a href="#section5">Quams</a>
-                <a href="#section6">Contact</a>
+                <a href="#home" class="nav navbar-nav">Home</a>
+                <a href="#section1" class="nav navbar-nav">About Us</a>
+                <a href="#section3" class="nav navbar-nav">Team</a>
+                <a href="#section5" class="nav navbar-nav">Quams</a>
+                <a href="#section6" class="nav navbar-nav">Contact</a>
             </menu>
             <div><i id="burger" class="fas fa-bars"></i></div>
         </nav>
@@ -135,11 +135,15 @@
                     <img src="./img/300.png" class="glide__slide"></img>
                 </div>
             </div>
+            <div class="glide__arrows" data-glide-el="controls">
+                <button class="glide__arrow glide__arrow--left" data-glide-dir="<">prev</button>
+                <button class="glide__arrow glide__arrow--right" data-glide-dir=">">next</button>
+            </div>
         </div>
     </section>
     <!-- QUAMS -->
     <section id="section5">
-        <h2>Quams</h2>
+        <h2 data-aos="flip-up">Quams</h2>
         <div class="contenair">
             <div class="row">
                 <div class="col-lg-4">
@@ -182,8 +186,8 @@
                     </a>
                 </div>
                 <div class="col-lg-4">
-                    <a href="./img/fleur/f7.jpg" data-fancybox="images" data-caption="Caption #8">
-                        <img src="./img/fleur/f7.jpg" class="imgQuams">
+                    <a href="./img/fleur/f8.jpg" data-fancybox="images" data-caption="Caption #8">
+                        <img src="./img/fleur/f8.jpg" class="imgQuams">
                     </a>
                 </div>
                 <div class="col-lg-4">
